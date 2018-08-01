@@ -1,8 +1,17 @@
 <html>
     <head>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript">
+            var feed = new Instafeed({
+                get: 'tagged',
+                tagName: 'awesome',
+                accessToken: '30948577.b28db0b.1a04495d93f14b6ca919dfad3b27545b'
+            });
+            feed.run();
+        </script>
     </head>
-    <body>
-        
+    <body class="container">
+        <div id="instafeed"></div>
     </body>
 </html>
